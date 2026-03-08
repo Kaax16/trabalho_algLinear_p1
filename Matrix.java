@@ -1,7 +1,7 @@
 public class Matrix {
-    private int linhas;
-    private int colunas;
-    private double[][] data;
+    private final int linhas;
+    private final int colunas;
+    private final double[][] data;
 
     public Matrix (int linhas, int colunas, double[] elements){
         this.colunas = colunas;
@@ -30,8 +30,21 @@ public class Matrix {
 
     }
 
-    public void getLinhas(int linha){
-        return data[i] = linha;
+    public int getLinhas(){
+        return linhas;
+    }
+
+    public int getClunas(){
+        return colunas;
+    }
+
+    public void print() {
+        for(int i = 0; i < linhas; i++){
+            for(int j = 0; j < colunas; j++ ){
+                System.out.println(data[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
