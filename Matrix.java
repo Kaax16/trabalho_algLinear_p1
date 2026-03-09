@@ -34,7 +34,7 @@ public class Matrix {
         return linhas;
     }
 
-    public int getClunas(){
+    public int getColunas(){
         return colunas;
     }
 
